@@ -27,4 +27,19 @@ let isPaidUser = (email: string, isPaid: boolean) => {
 
 isPaidUser("prince123@gmail.com", true);
 
+// MAKE A FUNCTION RETURN ONLY A SPECIFIC TYPE
+function checkUser(email: string, valid: boolean): string {
+  if (valid == true) {
+    console.log(`User with email ${email} has paid`);
+    let outVal = `User with email ${email} has paid`;
+    return outVal;
+  } else {
+    console.log(`User with email ${email} hasn't paid`);
+    let outVal = `User with email ${email} hasn't paid`;
+    return outVal;
+  }
+}
+
+checkUser("abc123@gmail.com", true);
+
 export {};
